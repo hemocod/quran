@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ outline: none;
+}
+/* ازاله اللي ع اليمين  سكولور بار  */
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    direction: rtl;
+    background-color: antiquewhite;
+}
+.quran{
+    text-align: center;
+}
+.surahContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.surahContainer .surah{
+    min-height: 100px;
+    min-width: 150px;
+    box-shadow: 0 0 5px gray;
+margin-bottom: 10px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: .5s ease-in-out;
+color: orange;
+font-size: 20px;
+}
+.surahContainer .surah:hover{
+    transform: scale(1.05);
+}
+
+/* surah-popup  */
+.surah-popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: bisque;
+    overflow-y: scroll;
+    transform: translateX(100%);
+}
+.surah-popup.active{
+    transform: translateX(0);
+    transition: .7s transform ease-in-out;
+}
+.surah-popup::-webkit-scrollbar{
+    width: 5px;
+    background-color: brown;
+
+}
+.surah-popup::-webkit-scrollbar-thumb{
+    background-color:  rgb(150, 69, 69);
+}
+.close-popup{
+    position: sticky;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+.surah-popup .ayat{
+    padding: 20px;
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    margin-right: 40px;
+    color: black;
+    text-align: center;
+}
+
+.surah-popup .ayat p{
+    line-height: 2;
+    width: 100%;
+    border-bottom: 3px solid orange ;
+    margin-bottom: 10px;
+}
