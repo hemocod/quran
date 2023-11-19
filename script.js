@@ -4,7 +4,7 @@ let mainSurasContainer=document.getElementById('mainSurahsContainer')
 
 getSurahs()
 function getSurahs(){
-    //fetch ssurah meta data {names of surah}
+    //fetch ssurah meta data {names of surah} بينات عامه للصور 
     fetch("http://api.alquran.cloud/v1/meta")
     .then(response=> response.json())
     .then(data=>{
@@ -38,7 +38,7 @@ function getSurahs(){
             // جدا مهم لانه يمسح محتويات كلها ويرجع من جديد مع اللوب
            ayatContainer.innerHTML= "";
            let Ayayt =data.data.ayahs;
-           Ayayt.forEach(aya=>{
+           Ayayt.forEach(aya =>{
             popup.classList.add('active');
             ayatContainer.innerHTML +=`
              <p>(${aya.numberInSurah}) - ${aya.text}</p>`
