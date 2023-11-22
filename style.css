@@ -4,7 +4,7 @@
     box-sizing: border-box;
  outline: none;
 } 
-/* ازاله اللي ع اليمين  سكولور بار  */
+
  ::-webkit-scrollbar{
     width: 0;
 }

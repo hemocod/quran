@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External stylesheets and font-awesome library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon for the website -->
     <link rel="icon" href="./images/qruan.PNG">
+
+    <!-- Google Fonts for custom fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@600;700;800;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title >القران الكريم </title>
-   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@600;700;800;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Title of the webpage -->
+    <title>القران الكريم</title>
 </head>
 <body>
+    <!-- Main section for displaying the Quran -->
     <section class="quran">
+        <!-- Heading for the Quran section -->
         <h1 class="h1-format-2">القران الكريم</h1>
+
+        <!-- Container for the main surahs -->
         <div class="container">
-            <div class="surahContainer" 
-            id="mainSurahsContainer">
-
-<!-- box surah   -->
-<div class="surah">
-   
-</div>
-
+            <!-- Surah container with an id -->
+            <div class="surahContainer" id="mainSurahsContainer">
+                <!-- Box for individual surahs will be dynamically added here -->
+                <div class="surah"></div>
+            </div>
+        </div>
     </section>
-    <!-- نهايه قسم  اسماء السور وارقامها  -->
 
-<!-- pop up بدايه قسم -->
-<div class="surah-popup">
-    <div class="close-popup">
-        <i class="fas fa-times"></i>
+    <!-- Popup for displaying ayat -->
+    <div class="surah-popup">
+        <!-- Close button with a font-awesome icon -->
+        <div class="close-popup">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <!-- Container for displaying ayat -->
+        <div class="ayat"></div>
     </div>
-    <div class="ayat">
 
-
-
-    </div>
-</div>
-
-
-
+    <!-- JavaScript file reference -->
     <script src="/script.js"></script>
 </body>
 </html>
